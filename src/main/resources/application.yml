@@ -1,0 +1,14 @@
+---
+api:
+  endpoint: http://api.${host}.springapps.io
+security:
+  oauth2:
+    client:
+      id: cf
+      grantType: password
+      client-id: cf
+      client-secret:
+      access-token-uri: http://uaa.${host}.springapps.io/oauth/token
+      user-authorization-uri: http://login.${host}.springapps.io/oauth/authorize
+    resource:
+      userInfoUri: http://uaa.${host}.springapps.io/userinfo
